@@ -1,0 +1,66 @@
+.header {
+  /* max-width: 90vw; */
+
+  margin: 51px 44px 0 44px;
+}
+.searchBar {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  height: 3.063rem;
+  border: 1px solid rgba(38, 78, 54, 1);
+  border-radius: 10px;
+  width: 41rem;
+}
+.profile {
+  display: flex;
+  gap: 9px;
+}
+hr {
+  max-width: 99vw;
+  height: 1px;
+  background-color: rgba(217, 217, 217, 1);
+}
+ul {
+  margin-top: 1rem;
+  display: flex;
+  list-style-type: none;
+}
+ul li {
+  margin-left: 6.813rem;
+  color: rgba(38, 78, 54, 1);
+  font-family: Playfair Display;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.666rem;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width:500px) {
+  .nav {
+    display: none;
+  }
+  .profile{
+    flex-direction: row-reverse;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .nav.show {
+    display: block;
+  }
+    
+}
+
+

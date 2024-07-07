@@ -1,0 +1,12 @@
+.btngreen {
+  background-color: rgba(38, 78, 54, 1);
+  color: rgba(252, 252, 252, 1);
+  width: 273px;
+  height: 77px;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 10px;
+  border-radius: 8px;
+}

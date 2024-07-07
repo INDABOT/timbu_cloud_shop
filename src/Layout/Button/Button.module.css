@@ -1,0 +1,14 @@
+.button {
+  background-color: rgba(233, 115, 31, 1);
+  width: 259px;
+  height: 77px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 8px;
+  font-family: "Quicksand";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: rgba(252, 252, 252, 1);
+  border: none;
+}
