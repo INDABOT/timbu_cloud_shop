@@ -1,0 +1,103 @@
+.R_heading {
+  max-width: 94vw;
+  margin: 51px 44px 0 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.R_heading h5 {
+  color: var(--Color, rgba(16, 17, 19, 0.9));
+  font-family: Quicksand;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.testimonyContainer{
+  justify-content: center;
+  margin-top: 38px;
+  margin-bottom: 166px;
+  display: flex;
+  gap: 4%;
+  
+
+}
+.testimony {
+  padding-left: 20px;
+  width: 394px;
+  height: 352px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #264e36;
+  background: var(--light, #fcfcfc);
+}
+.testimony .name{
+  margin-top: 25px;
+}
+.testimony p {
+  color: #000;
+  font-family: Quicksand;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.testimony img {
+  width: 136px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+small {
+  color: #000;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 152px;
+}
+.testimony img +p {
+  padding-top: 40px;
+  margin-bottom: 18px;
+
+}
+.similarProducts{
+  max-width: 94vw;
+  margin: 51px 44px 0 44px;
+  display: flex;
+  gap: 44px;
+  margin-bottom: 237px;
+}
+
+@media screen and (max-width: 480px) {
+
+  .reviewContainer .R_heading h5 {
+    color: var(--Color, rgba(16, 17, 19, 0.9));
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  .testimonyContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .testimony {
+    margin: 15px auto;
+    padding-left: 20px;
+    width: 90%;
+    height: 352px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #264e36;
+    background: var(--light, #fcfcfc);
+  }
+  .similarProducts{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px auto;
+  }
+}

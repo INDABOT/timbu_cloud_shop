@@ -1,24 +1,23 @@
 .Payment{
     display: flex;
     justify-content: center;
+    gap: 1.5rem;
 }
-.Payment img{
-    margin-left: 1.938rem;
-}
+
+
 
 
 @media screen and (max-width:430px) {
     .Payment {
         display: grid;
+        place-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 20px;
-      }
+        row-gap: 15px;
+    }
       
       .Payment img {
         width: 142px;
         height: 62px;
-        flex-shrink: 0;
       }
 }

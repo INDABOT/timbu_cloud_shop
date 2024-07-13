@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import styles from './Button.module.css'
 
-const Button = ({text}) => {
+const Button = ({text, onClick}) => {
   return (
     <div>
-        <button className={styles.button}>{text}</button>
+        <button onClick={onClick} className={styles.button}>{text}</button>
     </div>
   )
 }

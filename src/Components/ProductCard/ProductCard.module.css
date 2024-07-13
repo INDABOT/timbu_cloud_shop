@@ -1,0 +1,58 @@
+
+.Card_container {
+  position: relative;
+  width: 28vw;
+
+}
+.pImg{
+    min-width: 100%;
+}
+.hrtC {
+  position: absolute;
+  top: 2rem;
+  right: 1.3rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info h4 {
+  color: #101113;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.info span {
+  color: #101113;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Card_container p {
+  color: #101113;
+  font-family: "Quicksand";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.starctn span {
+  position: absolute;
+  left: 24%;
+  bottom: 2%;
+
+  color: #000;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.starctn {
+  display: flex;
+  justify-content: space-between;
+}

@@ -5,6 +5,7 @@
     justify-content: center;
 }
 h3 {
+  margin: 18px;
   color: rgba(16, 17, 19, 0.9);
   font-weight: 400;
   font-family: Quicksand;

@@ -1,36 +1,45 @@
+import  { useState } from 'react';
 import styles from "./Header.module.css";
 import Logo from "../../assets/Logo.svg";
-import profileImg from "../../assets/profile-img.svg";
 import Cart from "../../assets/Cart.svg";
 import search from "../../assets/search.svg";
-// import menu from "../../assets/menu.svg";
-
+import menu from "../../assets/menu.svg";
 
 const Header = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
 
   return (
     <div className={styles.header}>
       <div className={styles.searchBar}>
-        <img className={styles.Logo} src={Logo} alt="" />
-        <img src={search} alt="" />
-        <input placeholder="search" type="text" />
+        <img className={styles.Logo} src={Logo} alt="Logo" />
+        <img className={styles.search} src={search} alt="Search" />
+        <input className={styles.Hinput} placeholder="search" type="text" />
         <div className={styles.profile}>
-          <img src={profileImg} alt="" />
-          <img className={styles.Cart} src={Cart} alt="" />
+          <img className={styles.menuToggle} src={menu} alt="Menu" onClick={toggleSidebar} />
+          <a href="/shopping"><img className={styles.Cart} src={Cart} alt="Cart" /></a>
         </div>
       </div>
       <hr />
       <div className={styles.nav}>
-      <ul>
-        <li>Home</li>
-        <li>Products</li>
-        <li>Contact Us </li>
-        <li>FAQ</li>
-      </ul>
+        <ul className={styles.ul}>
+          <li><a href="/">Home</a></li>
+          <li><a href="/products">Products</a></li>
+        </ul>
       </div>
-
+      <div className={`${styles.sidebar} ${sidebarOpen ? styles.open : ''}`}>
+        <input type="text" placeholder="Search..." className={styles.sidebarSearchBar} />
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+          </ul>
+        </nav>
+      </div>
+      {sidebarOpen && <div className={styles.overlay} onClick={toggleSidebar}></div>}
     </div>
   );
 };

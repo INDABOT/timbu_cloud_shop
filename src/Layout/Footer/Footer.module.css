@@ -1,23 +1,32 @@
 .footer {
   background-color: rgba(38, 78, 54, 0.61);
   margin-top: 13.438rem;
-  height: 34.938rem;
+  padding-top: 60px;
+  min-height: 39rem;
 }
 .textArea {
   display: flex;
 }
+
 .footerLogo {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
+
 .imgContainer {
   margin-left: 3.063rem;
 }
+.imgContainer img{
+  filter: invert(1)
+  brightness(2);
+}
+
 .footerText {
   width: 30%;
   margin-left: 3.063rem;
 }
+
 .footerText p {
   color: #fcfcfc;
   font-family: Quicksand;
@@ -26,6 +35,7 @@
   font-weight: 400;
   line-height: normal;
 }
+
 .shop {
   color: #fcfcfc;
   font-family: Quicksand;
@@ -34,26 +44,20 @@
   font-weight: 400;
   line-height: normal;
 }
-.f_ul {
-  flex-direction: column;
-  width: 40%;
-}
-.f_ul li {
-  color: #fff;
-  font-family: Quicksand;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+
 .navF {
   display: flex;
+  gap: 85px;
 }
+
 .subscribe {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
+
 label {
+  position: relative;
   padding: 1rem;
   background-color: rgba(252, 252, 252, 1);
   display: flex;
@@ -63,11 +67,27 @@ label {
   border-radius: 8px;
   width: 47.25rem;
   height: 7.688rem;
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+.subInput::placeholder {
+  color: rgba(38, 78, 54, 0.61);
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .subInput {
-  height: 90%;
+position: absolute;
+left: 25px;
+width: 59%;
+border-radius: 10px;
+  height: 60%;
   border: none;
   padding: 10px;
+  font-size: 20px;
+  font-family: "Playfair Display";
 }
 .copyright {
   display: flex;
@@ -76,10 +96,134 @@ label {
   padding-bottom: 1.875rem;
 }
 .copyright p {
+  bottom: -20%;
   color: #fff;
   font-family: Quicksand;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.sitemapSocial, .sitemapReturn, .sitemapHome{
+  display: flex;
+  flex-direction: column;
+}
+h6 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sitemapHome a{
+  margin-top: 11px;
+  text-decoration: none;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+.sitemapSocial a{
+  margin-top: 11px;
+  text-decoration: none;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sitemapReturn a {
+  margin-top: 11px;
+  text-decoration: none;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.btnC{
+  right: 20px;
+  position: absolute;
+}
+@media screen and (max-width: 430px) {
+  .footer {
+    min-height: 50rem;
+    max-width: 100%;
+    position: relative;
+  }
+  label {
+    position: absolute;
+    top: -50px;
+    max-width: 70%;
+    height: 82px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--light, #fcfcfc);
+  }
+
+  .sitemapReturn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 42%;
+    left: 20px;
+  }
+  .sitemapHome{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 20px;
+  }
+  .sitemapSocial{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    right: 60px;
+  }
+
+  .sitemapReturn a {
+    margin-top: 11px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+.imgContainer{
+  margin: 0;
+  left: 20px;
+  position: absolute;
+  bottom: 200px;
+}
+
+ .footerText{
+  margin: 0;
+  position: absolute;
+  width: 85%;
+  bottom: 100px;
+  left: 20px;
+ }
+ .copyright{
+  position: absolute;
+  bottom: -0%;
+  left: 30%;
+ }
+ .copyright p{
+  font-size: 12px;
+ }
 }

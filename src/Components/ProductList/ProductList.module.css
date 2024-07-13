@@ -1,0 +1,19 @@
+.product_container{
+    max-width: 94vw;
+    margin: 51px 44px 0 44px;
+}
+
+.product_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.75rem;
+    row-gap: 3.25rem;
+}
+
+@media screen and (max-width:480px) {
+    .product_card{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

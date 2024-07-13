@@ -1,0 +1,80 @@
+.accordion {
+    background-color: transparent;
+    overflow-x: hidden;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .accordionItem {
+    border-bottom: 1px solid #000000;
+    padding: 0.5rem 0;
+  }
+  
+  .accordionTitle {
+    /* width: 90%; */
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    cursor: pointer;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .accordionTitle .plus{
+   
+    position: absolute;
+    right: -90%;
+  }
+  .accordionTitle .Atitle{
+  }
+  .accordionContent {
+    margin-top: 19px;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .accordion{
+      margin: 0;
+      padding: 0;
+    }
+    .accordionTitle {
+      /* width: 90%; */
+      position: relative;
+      display: flex;
+      margin: 0;
+      /* justify-content: space-between; */
+      /* align-items: center; */
+      cursor: pointer;
+      color: #000;
+      font-family: Quicksand;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .accordionItem {
+      border-bottom: 1px solid #000000;
+      padding: 0.5rem 0;
+      margin: 0;
+    }
+    .accordionContent {
+      margin-top: 19px;
+      color: #000;
+      font-family: Quicksand;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+  }

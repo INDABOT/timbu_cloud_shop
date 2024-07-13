@@ -1,111 +1,118 @@
 .Hero {
-    max-width: 94vw;
-    max-height: 78vh;
-    margin: auto;
+  max-width: 94vw;
+  max-height: 78vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 41px;
+}
+.textArea {
+  
+  background-color: rgba(251, 188, 5, 0.24);
+  width: 50%;
+}
+.imgArea{
+  width: 50%;
+}
+.imgArea img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 0px 0px 10px; 
+}
+.textBox{
+    width: 36rem;
+    margin-left: 81px;
+    margin-top: 81px;
     display: flex;
-    flex-direction: row-reverse;
-    margin-top: 41px;
+    flex-direction: column;
+    
+}
+
+.textBox h4{
+  margin-top: 47px;
+  color: rgba(16, 17, 19, 1);
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47.99px;
+  text-align: left;
+  
+}
+.textBox p {
+  margin-top: 30px;
+  margin-bottom: 83px;
+  color:rgba(16, 17, 19, 1);
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 430px) {
+  .Hero {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
   }
-  .textArea {
-    background-color: rgba(251, 188, 5, 0.24);
-    width: 50%;
+  .textBox {
+    width: 22rem;
+    margin: 0;
+    gap: 19px;
   }
-  .imgArea{
-    width: 50%;
+  .textArea{
+    border-radius: 0;
   }
-  .imgArea img{
+  h1 {
+    color: #fcfcfc;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 109.375% */
+  }
+
+  h1 + p {
+    color: #fcfcfc;
+    font-family: "Quicksand";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .btnHero {
+    margin-bottom: 107px;
+    margin-top: 47px;
+  }
+
+  .textArea,
+  .imgArea {
     width: 100%;
-    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .imgArea img {
+    border-radius: 0;
     object-fit: cover;
     object-position: center;
   }
-  .textBox{
-      width: 36rem;
-      margin-left: 81px;
-      margin-top: 81px;
-      display: flex;
-      flex-direction: column;
-      gap: 5rem;
+
+  .textBox {
+    width: auto;
+    margin: 20px 20px 0 20px; 
   }
-  h4{
-    color: rgba(16, 17, 19, 1);
-    font-family: 'Playfair Display';
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 47.99px;
-    text-align: left;
-    
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
+
   p {
-    color:rgba(16, 17, 19, 1);
-    font-family: Quicksand;
-    font-size: 1.7rem;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
-  
-  
-  @media screen and (max-width: 430px) {
-    .Hero {
-      flex-direction: column-reverse;
-      max-width: 100%;
-      max-height: 100%;
-      margin: 0;;
-    }
-    .textBox {
-      width: 22rem;
-      margin: 0;
-      gap: 19px;
-    }
-    h1 {
-      color:  #fcfcfc;
-      font-family: "Playfair Display";
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 70px; /* 109.375% */
-    }
-  
-    h1+p {
-      color: #FCFCFC;
-      font-family: 'Quicksand';
-      font-size: 1.6rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-    .btnHero{
-      margin-bottom: 107px;
-      margin-top: 47px;
-      
-    }
-  
-  
-    .textArea,
-    .imgArea {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    .imgArea img {
-      object-fit: cover;
-      object-position: center;
-    }
-  
-    .textBox {
-      width: auto;
-      margin: 20px 20px 0 20px; /* Adjusted margin for mobile view */
-    }
-  
-    h1 {
-      font-size: 3rem; /* Adjust font size for smaller screens */
-      line-height: 3.5rem;
-    }
-  
-    p {
-      font-size: 1.2rem; /* Adjust font size for smaller screens */
-      line-height: 1.5rem;
-    }
-  }
-  
+}

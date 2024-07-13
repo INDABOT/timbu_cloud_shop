@@ -1,0 +1,33 @@
+.navBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 179px;
+  margin-bottom: 314px;
+  gap: 24px;
+}
+.nav1,
+.nav2 {
+  position: relative;
+}
+.navBox span {
+  top: 5px;
+  left: 20px;
+  position: absolute;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.navBox .sp2{
+    color: rgba(121, 146, 131, 1);
+    top: 5px;
+    left: 20px;
+    position: absolute;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

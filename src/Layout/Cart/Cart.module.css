@@ -1,0 +1,18 @@
+.cart {
+  text-decoration: none;
+  border-radius: 4px;
+  background: #e9731f;
+  border: #e9731f;
+  color: #fcfcfc;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  width: 111px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

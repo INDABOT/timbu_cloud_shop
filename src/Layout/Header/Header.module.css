@@ -1,55 +1,123 @@
-.header {
-  /* max-width: 90vw; */
 
+.header {
   margin: 51px 44px 0 44px;
 }
+
 .searchBar {
-  height: 5rem;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-input {
+.searchBar .search {
+  position: absolute;
+  top: 40%;
+  left: 29%;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.Hinput {
   height: 3.063rem;
   border: 1px solid rgba(38, 78, 54, 1);
   border-radius: 10px;
-  width: 41rem;
+  width: 50%; 
+  font-size: 16px;
+  padding-left: 5rem;
+}
+.Hinput::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .profile {
   display: flex;
-  gap: 9px;
+  gap: 1.9rem;
 }
+
 hr {
-  max-width: 99vw;
-  height: 1px;
+  max-width: 97vw;
+  height: 0.5px;
   background-color: rgba(217, 217, 217, 1);
 }
-ul {
+
+.ul {
   margin-top: 1rem;
   display: flex;
   list-style-type: none;
 }
-ul li {
+
+.ul li a {
+  text-decoration: none;
   margin-left: 6.813rem;
   color: rgba(38, 78, 54, 1);
-  font-family: Playfair Display;
+  font-family: "Playfair Display", serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.666rem;
   letter-spacing: 0.02em;
   text-align: left;
 }
+
+.ul li a:hover {
+  text-decoration: underline;
+}
+
+.ul li a:active {
+  text-decoration: underline;
+  color: purple;
+}
+
 .nav {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-@media screen and (max-width:500px) {
+.menuToggle {
+  display: none;
+}
+.sidebar{
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .profile {
+    gap: 10px;
+  }
   .nav {
     display: none;
   }
-  .profile{
+
+  .header hr {
+    display: none;
+  }
+  .Logo {
+    height: 50px;
+  }
+  .search {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+
+  .profile {
     flex-direction: row-reverse;
   }
 
@@ -60,7 +128,156 @@ ul li {
   .nav.show {
     display: block;
   }
-    
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #FFFFFF;
+    color: white;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebarSearchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    z-index: 4;
+  }
+
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar nav ul li {
+    margin: 20px 0;
+  }
+
+  .sidebar nav ul li a {
+    color: #264E36;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+  }
+
+  .sidebar nav ul li a:hover{
+    text-decoration: underline;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    display: none;
+    z-index: 1;
+  }
+
+  .overlay.active {
+    display: block;
+  }
 }
 
+.header {
+  margin: 51px 44px 0 44px;
+}
 
+.searchBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar .search {
+  position: absolute;
+  top: 40%;
+  left: 29%;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  width: 50%; /* Adjust percentage as needed */
+}
+
+.Hinput {
+  height: 3.063rem;
+  border: 1px solid rgba(38, 78, 54, 1);
+  border-radius: 10px;
+  width: 50%; /* Take full width of the parent container */
+  padding-left: 5rem;
+}
+.Hinput::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.profile {
+  display: flex;
+  gap: 1.9rem;
+}
+
+hr {
+  max-width: 97vw;
+  height: 0.5px;
+  background-color: rgba(217, 217, 217, 1);
+}
+
+.ul {
+  margin-top: 1rem;
+  display: flex;
+  list-style-type: none;
+}
+
+.ul li a {
+  text-decoration: none;
+  margin-left: 6.813rem;
+  color: rgba(38, 78, 54, 1);
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.666rem;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.ul li a:hover {
+  text-decoration: underline;
+}
+
+.ul li a:active {
+  text-decoration: underline;
+  color: purple;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menuToggle{
+  display: none;
+}
